@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class BoastsRoastsModel(models.Model):
     isboast = models.BooleanField()
-    post_body = models.CharField( max_length=280)
+    post_body = models.CharField(max_length=280)
     post_upvote = models.IntegerField(default=0)
     post_downvote = models.IntegerField(default=0)
     date_created = models.DateTimeField(auto_now_add=True)
